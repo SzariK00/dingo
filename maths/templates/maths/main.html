@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Title{% endblock %}</title>
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        To część stała szablonu głównego.
+    </div>
+    <div id="inner-content">
+        {% block content %}
+            To jest blok kodu. Można go nadpisać w innych szablonach.
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

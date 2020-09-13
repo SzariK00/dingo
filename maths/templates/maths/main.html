@@ -10,12 +10,19 @@
 <body>
 <div id="content">
     <div id="header">
-        To część stała szablonu głównego.
+        <b>To część stała szablonu głównego.</b>
     </div>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
     <div id="inner-content">
         {% block content %}
             To jest blok kodu. Można go nadpisać w innych szablonach.
-        {% endblock %}
+        {% endblock content %}
     </div>
 </div>
 </body>

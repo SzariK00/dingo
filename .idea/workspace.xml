@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c067d1d2-38af-4034-a93f-0acd074da873" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dingo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dingo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/maths/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/maths/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maths/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maths/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -125,7 +133,9 @@
       <workItem from="1599686247943" duration="297000" />
       <workItem from="1599768072894" duration="411000" />
       <workItem from="1599848201875" duration="4383000" />
-      <workItem from="1599942136386" duration="17373000" />
+      <workItem from="1599942136386" duration="21697000" />
+      <workItem from="1600528891336" duration="12377000" />
+      <workItem from="1600593906469" duration="20433000" />
     </task>
     <servers />
   </component>
@@ -133,6 +143,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="568" y="210" key="#Inspections" timestamp="1600528914641">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="568" y="210" key="#Inspections/0.23.1920.1004@0.23.1920.1004" timestamp="1600528914641" />
+    <state x="672" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600115570704">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="672" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1004@0.23.1920.1004" timestamp="1600115570704" />
     <state x="160" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600002775778">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
@@ -157,14 +175,18 @@
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state width="1920" height="296" key="GridCell.Tab.0.right/0.23.1920.1004@0.23.1920.1004" timestamp="1599408853638" />
-    <state x="469" y="164" key="SettingsEditor" timestamp="1599942722353">
+    <state x="469" y="164" key="SettingsEditor" timestamp="1600529172811">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
-    <state x="469" y="164" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1599942722353" />
+    <state x="469" y="164" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1600529172811" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1599508851288">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1920.1004@0.23.1920.1004" timestamp="1599508851288" />
+    <state x="291" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600723362609">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="291" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1600723362609" />
     <state x="706" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1599597508363">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>

@@ -17,4 +17,8 @@
 #### 5. posts - a small exercise with migrations.  
     Check the database tables:
      - posts_author - stores authors of the posts
-     - posts_post - stores posts with the relationship with posts_author table using author_id Foreign Key          
+     - posts_post - stores posts with the relationship with posts_author table using author_id Foreign Key      
+#### 6. forms - an exercise with forms.  
+    Run server and type:
+    - localhost:port/posts/ - to be able to see posts and add more
+    - localhost:port/posts/authors - to be able to see posts' authors and add more of them

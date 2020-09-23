@@ -13,7 +13,9 @@ class PostForm(forms.Form):
         content = cleaned_data.get('content')
         author = cleaned_data.get('author_id')
 
-        if not title or content or author:
+        if not (title and content):
+            raise forms.ValidationError("Musisz uzupełnić wszystkie wartości!")
+        elif author is None:
             raise forms.ValidationError("Musisz uzupełnić wszystkie wartości!")
 
 
@@ -27,5 +29,5 @@ class AuthorForm(forms.Form):
         nick = cleaned_data.get('nick')
         email = cleaned_data.get('email')
 
-        if not (nick or email):
+        if not (nick and email):
             raise forms.ValidationError("Musisz uzupełnić nick oraz email!")

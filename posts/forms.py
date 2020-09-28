@@ -13,16 +13,14 @@ class PostForm(forms.Form):
         content = cleaned_data.get('content')
         author = cleaned_data.get('author_id')
 
-        if not (title and content):
-            raise forms.ValidationError("Musisz uzupełnić wszystkie wartości!")
-        elif author is None:
+        if not all([title, content, author]):
             raise forms.ValidationError("Musisz uzupełnić wszystkie wartości!")
 
 
-class AuthorForm(forms.Form):
-    nick = forms.CharField(label='Nick', required=False)
-    email = forms.EmailField(label='E-mail', required=False)
-    bio = forms.CharField(label='Krótkie bio', widget=forms.Textarea, required=False)
+class AuthorForm(forms.ModelForm):
+    class Meta:
+        model = Author
+        fields = '__all__'
 
     def clean(self):
         cleaned_data = super().clean()

@@ -1,0 +1,79 @@
+[
+{
+    "model": "posts.post",
+    "pk": 1,
+    "fields": {
+        "title": "Mój pierwszy post.",
+        "content": "To jest mój pierwszy post. Jest bardzo krótki, ale kolejne będą dłuższcze ^^",
+        "created": "2020-09-13T20:20:39.522Z",
+        "modified": "2020-09-13T20:49:10.180Z",
+        "author_id": 1
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 2,
+    "fields": {
+        "title": "Mój drugi post.",
+        "content": "To jest mój drugi post. Nie jest dłuższy od pierwszego - niestety :(",
+        "created": "2020-09-13T20:53:07.044Z",
+        "modified": "2020-09-13T20:53:49.639Z",
+        "author_id": 2
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 3,
+    "fields": {
+        "title": "Mój trzeci post.",
+        "content": "To jest mój trzeci post. Będzie o wiele dłuższyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy od pozostałychhhhhhhhhhhhhhhhhh...........",
+        "created": "2020-09-14T19:32:53.121Z",
+        "modified": "2020-09-14T19:34:11.962Z",
+        "author_id": 1
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 4,
+    "fields": {
+        "title": "To jest post Marty",
+        "content": "Lalala",
+        "created": "2020-09-19T19:57:30.845Z",
+        "modified": "2020-09-19T19:57:30.845Z",
+        "author_id": 3
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 5,
+    "fields": {
+        "title": "Test1",
+        "content": "Test1",
+        "created": "2020-09-21T21:44:54.595Z",
+        "modified": "2020-09-21T21:44:54.595Z",
+        "author_id": 1
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 6,
+    "fields": {
+        "title": "Test2",
+        "content": "Test2",
+        "created": "2020-09-21T21:46:23.430Z",
+        "modified": "2020-09-21T21:46:23.430Z",
+        "author_id": 3
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 25,
+    "fields": {
+        "title": "Test3",
+        "content": "Test3",
+        "created": "2020-09-27T13:52:05.751Z",
+        "modified": "2020-09-27T13:52:05.751Z",
+        "author_id": 1
+    }
+}
+]

@@ -49,7 +49,7 @@ def author_list(request):
         form = AuthorForm(request.POST)
 
         if form.is_valid():
-            Author.objects.get_or_create(**form.cleaned_data)
+            form.save()
             messages.add_message(
                 request,
                 messages.SUCCESS,

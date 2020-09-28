@@ -83,32 +83,32 @@ def math_details(request, id):
 
 
 def results_list(request):
-   if request.method == "POST":
-       form = ResultForm(request.POST)
+    if request.method == "POST":
+        form = ResultForm(request.POST)
 
-       if form.is_valid():
-           if form.cleaned_data['error'] == '':
-               form.cleaned_data['error'] = None
-           Result.objects.get_or_create(**form.cleaned_data)
-           messages.add_message(
-               request,
-               messages.SUCCESS,
-               "Utworzono nowy Result!!"
-           )
-       else:
-           messages.add_message(
-               request,
-               messages.ERROR,
-               form.errors['__all__']
-           )
+        if form.is_valid():
+            if form.cleaned_data['error'] == '':
+                form.cleaned_data['error'] = None
+            form.save()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "Utworzono nowy Result!!"
+            )
+        else:
+            messages.add_message(
+                request,
+                messages.ERROR,
+                form.errors['__all__']
+            )
 
-   form = ResultForm()
-   results = Result.objects.all()
-   return render(
-       request=request,
-       template_name="maths/results.html",
-       context={
-           "results": results,
-           "form": form
-       }
-   )
+    form = ResultForm()
+    results = Result.objects.all()
+    return render(
+        request=request,
+        template_name="maths/results.html",
+        context={
+            "results": results,
+            "form": form
+        }
+    )

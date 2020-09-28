@@ -22,3 +22,8 @@
     Run server and type:
     - localhost:port/posts/ - to be able to see posts and add more
     - localhost:port/posts/authors - to be able to see posts' authors and add more of them
+#### 7. tests - an exercise with tests (stored in tests folders in particular apps)  
+    Run console (venv) and type:
+    - python manage.py test greetings
+    - python manage.py test maths
+    - python manage.py test posts

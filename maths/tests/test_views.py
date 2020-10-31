@@ -25,3 +25,20 @@ class MathViewsTest(TestCase):
     def test_maths_add_as_example(self):
         response = self.client.get('/maths/add/1/2')
         self.assertIn('Wynik operacji 1 + 2 wynosi 3', response.content.decode())
+
+
+class MathViewsPaginationTest(TestCase):
+    fixtures = ['math', 'result']
+
+    def setUp(self):
+        self.client = Client()
+
+    def test_get_first_5(self):
+        response = self.client.get("/maths/histories/")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.context["maths"]), 8)
+
+    def test_get_last_page(self):
+        response = self.client.get("/maths/histories/?page=2")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.context["maths"]), 8)

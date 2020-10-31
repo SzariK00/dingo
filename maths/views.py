@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import messages
 from maths.models import Math, Result
-from maths.forms import ResultForm
+from maths.forms import ResultForm, SearchForm
+from django.core.paginator import Paginator
 
 
 # Create your views here.
@@ -65,11 +66,27 @@ def div(request, a, b):
 
 def maths_list(request):
     maths = Math.objects.all()
-    title = 'TEST'
+    paginator = Paginator(maths, 8)
+    page_number = request.GET.get('page')
+    maths = paginator.get_page(page_number)
     return render(
         request=request,
         template_name="maths/list.html",
-        context={"maths": maths, "title": title}
+        context={"maths": maths}
+    )
+
+
+def maths_search(request):
+    operation = request.POST.get('operation')
+    content = Math.objects.all().filter(operation=operation)
+    form = SearchForm()
+    return render(
+        request=request,
+        template_name="maths/search.html",
+        context={
+            "search_result": content,
+            "form": form
+        }
     )
 
 
@@ -78,7 +95,8 @@ def math_details(request, id):
     return render(
         request=request,
         template_name="maths/details.html",
-        context={"math": math}
+        context={
+            "math": math}
     )
 
 

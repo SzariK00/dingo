@@ -5,7 +5,7 @@ description = "Kurs kodilla"
 authors = ["Adrian Jelonek <ajelonek@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.8.5"
+python = ">=3.7"
 django = "^3.1.1"
 lorem = "^0.1.1"
 ipython = "^7.18.1"

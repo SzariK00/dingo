@@ -1,6 +1,12 @@
 from django import forms
-
 from maths.models import Result
+
+OPERATION_CHOICES = [
+    ("add", "add"),
+    ("sub", "sub"),
+    ("mul", "mul"),
+    ("div", "div"),
+]
 
 
 class ResultForm(forms.ModelForm):
@@ -17,3 +23,7 @@ class ResultForm(forms.ModelForm):
             raise forms.ValidationError("Podaj tylko jedną z wartości")
         elif not (value or error):
             raise forms.ValidationError("Nie podano żadnej wartości!")
+
+
+class SearchForm(forms.Form):
+    operation = forms.ChoiceField(label='Operacja', choices=OPERATION_CHOICES)
